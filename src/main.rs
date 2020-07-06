@@ -8,10 +8,9 @@ fn main() {
     thread::sleep(time::Duration::from_secs(4));
     
     let paginas: Vec<&str> = vec![
-        "https://wekan.mapeo.com.br/", 
-        "https://lab.mapeo.com.br/", 
-        "https://www.gitlab.com/",
-        "https://app.asana.com/"];
+    // SITES THAT I'D LIKE TO BE OPENED
+    "https://www.google.com.br"    
+    ];
 
     for i in paginas {
         webbrowser::open(i).expect("Erro ao abrir URL");
@@ -27,7 +26,5 @@ fn main() {
     thread::sleep(time::Duration::from_secs(5));
 
     process::exit(1);
-
-
 
 }
