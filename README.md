@@ -8,6 +8,8 @@ Ele inicia as ferramentas necessárias para minha sessão de trabalho. A ideia �
 
 Para criar o executável:
 
+0. Tenha o (cargo instalado em seu computador)[https://www.rust-lang.org/pt-BR/tools/install]
+
 1. Copie o repositório
 
 2. Abra o repositório no terminal
