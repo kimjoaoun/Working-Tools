@@ -6,7 +6,7 @@ fn main() {
     println!("Mais um dia trabalho, vamos lá!\nComeçando em 5 segundos...");
     
     thread::sleep(time::Duration::from_secs(4));
-    
+
     let paginas: Vec<&str> = vec![
     // SITES THAT I'D LIKE TO BE OPENED
     "https://www.google.com.br"    
@@ -17,11 +17,13 @@ fn main() {
     }
 
     let output = process::Command::new("code")
-            .status()
+            .output()
             .expect("Oops, não consegui iniciar o VSCode, ele está instalado?");
 
 
-    println!("VSCode Status Code: {}", &output);
+
+        
+    println!("VSCode Status Code: {}", output.status);
 
     thread::sleep(time::Duration::from_secs(5));
 
